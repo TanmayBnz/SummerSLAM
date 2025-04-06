@@ -10,7 +10,7 @@ Your task is to analyze a video depicting an agent navigating through an environ
   - However, you may utilize existing libraries such as OpenCV, PyTorch, and TensorFlow to assist you in the implementation process.
 
 **BONUS Task:**
-As a bonus, try to generate a 3D map of the surroundings of the agent along with the odometry in real time. When done, you’ll be allowed to run your code on our ground vehicle Nova.
+As a bonus, try to generate a 3D map of the surroundings of the agent along with the odometry in real time. When done, you’ll be allowed to run your code on our ground vehicle STEVE.
 
 ## Setup
 This repo contains the package to simulate the pov of a car travelling somewhere. You can set it up by cloning this repo as the `src` foler and building it using catkin_make/catkin build.
