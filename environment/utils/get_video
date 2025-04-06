@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+import os
+import subprocess
+
+url = "https://youtu.be/LQg-tdu91o4"
+
+output_path = "video.mp4"
+
+# -f bestvideo+bestaudio chooses the best quality video/audio combo (usually 1080p or higher)
+command = [
+    "yt-dlp",
+    "-f", "bestvideo[ext=mp4]",
+    "-o", output_path,
+    url
+]
+
+try:
+    subprocess.run(command, check=True)
+    print(f"✅ Download complete: {output_path}")
+except subprocess.CalledProcessError as e:
+    print("❌ Download failed:", e)
