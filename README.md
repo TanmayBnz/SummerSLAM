@@ -25,10 +25,11 @@ cd src/environment/utils/
 chmod 777 get_video # giving it all the permissions
 ./get_video
 ```
-Finally you can launch the simulation using the roslaunch command in the workspace. (Do not forget to source th_ package)
+If this doesn't work download stacher for linux and download the [video](https://youtu.be/LQg-tdu91o4) in .mp4 format.
+Finally you can launch the simulation using the roslaunch command in the workspace. (Do not forget to source the package)
 ```zsh
 cd /path/to/ws
-source devel/setup.bash # or setup.zsh depending on what you're using
-roslaunch enviroment env 
+source install/setup.bash # or setup.zsh depending on what you're using
+roslaunch enviroment environment.launch.py
 ```
-
+In RViz, add a new Image visualisation for the topic "/video".
